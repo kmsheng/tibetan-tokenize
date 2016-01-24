@@ -1,1 +1,1 @@
-exports.exports = require('./lib/tokenize');
+module.exports = require('./lib/tokenize');
