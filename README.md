@@ -1,4 +1,6 @@
 # tibetan-tokenize
+[![Build Status](https://travis-ci.org/kmsheng/tibetan-tokenize.svg?branch=master)](https://travis-ci.org/kmsheng/tibetan-tokenize)
+
 Tibetan Tokenization
 
 # Example
