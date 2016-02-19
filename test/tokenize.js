@@ -28,4 +28,15 @@ describe('tokenize', function() {
     expectedOffsets.should.deepEqual(result.offsets);
   });
 
+  it('should tokenize tibetan words', function() {
+
+    var raw = '༼ཀ༽ ༄༅། ༈ །འདུལ་བ་ལུང་བཞུགས་སོ། ། (黃) 律師戒行經第一部';
+
+    var expectedTokens = ['༼ཀ༽', '༄༅', '༈', 'འདུལ', 'བ', 'ལུང', 'བཞུགས', 'སོ', '(黃)', '律師戒行經第一部'];
+    var expectedOffsets = [0, 4, 8, 11, 16, 18, 22, 28, 34, 38];
+    var result = tokenize(raw);
+
+    expectedTokens.should.deepEqual(result.tokens);
+    expectedOffsets.should.deepEqual(result.offsets);
+  });
 });
